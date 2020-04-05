@@ -6,10 +6,13 @@ import  Header from './component/header';
 import Balance from './component/balance';
 import Expanses from './component/incomeExpanses';
 import { MDBCard, MDBCardBody, MDBCol } from 'mdbreact';
+import {GlobalProvider} from './Context/GlobalState';
+
+
 function App() {
   
     return (
-      <div  className="body">
+      <GlobalProvider  className="body">
           <Header/>
 
           
@@ -30,7 +33,7 @@ function App() {
           </MDBCard>
         </MDBCol>
         </div>
-       </div>
+       </GlobalProvider>
     );
   
 }
