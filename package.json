@@ -19,6 +19,7 @@
     "remove-demo": "rimraf ./src/assets ./src/components ./src/pages ./src/Routes.js ./src/App.js ./src/index.css && npm run rename"
   },
   "devDependencies": {
+    "eslint-plugin-react-hooks": "^3.0.0",
     "renamer": "^1.0.0",
     "rimraf": "^2.6.2"
   },

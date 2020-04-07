@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import Transaction from './component/transactionList';
+import TransactionList from './component/transactionList';
 import AddTransaction from './component/addTransaction';
 import  Header from './component/header';
 import Balance from './component/balance';
@@ -12,12 +12,9 @@ import {GlobalProvider} from './Context/GlobalState';
 function App() {
   
     return (
-      <GlobalProvider  className="body">
+      <GlobalProvider>
           <Header/>
-
-          
-          
-
+          <div className="body">
         <div className="container">
         <MDBCol className ="center" style={{ maxWidth: "40rem" }}>
           <MDBCard>
@@ -26,12 +23,13 @@ function App() {
             <hr></hr>
             <Expanses/>
             <hr></hr>
-            <Transaction/>
+            <TransactionList/>
             <hr></hr>
             <AddTransaction/>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
+        </div>
         </div>
        </GlobalProvider>
     );

@@ -1,24 +1,22 @@
-import React, { Fragment } from 'react'
-import {MDBIcon } from "mdbreact";
+/* eslint-disable react-hooks/rules-of-hooks */
+import React, { Fragment,useContext } from 'react';
+import Transaction from './transaction';
+import {GlobalContext} from '../Context/GlobalState';
 
 const transactionList = () => {
-    return (
-        <Fragment>
-        <h3>History</h3>
-       
-       <div className="row">
-       <div className="col-md-6">
-       <span>Cash</span>
-       </div>
+  
 
-       <div className="col-md-6">
+  const { transactions} = useContext(GlobalContext); 
+    return (
       
-      <MDBIcon icon="times" />
-       <span> R600</span>
-    
-      
-       </div>
-       </div>
+        <Fragment>
+        
+        <h3>History</h3>
+      {transactions.map(transaction =>(
+        //since it need to know which transaction 
+        //we need to pass it as a prop
+        <Transaction key={transaction.id} transaction={transaction}/>
+      ))}
        
         </Fragment>
     )
