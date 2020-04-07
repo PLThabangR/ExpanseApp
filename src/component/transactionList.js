@@ -11,7 +11,7 @@ const transactionList = () => {
       
         <Fragment>
         
-        <h3>History</h3>
+        <h5>History</h5>
       {transactions.map(transaction =>(
         //since it need to know which transaction 
         //we need to pass it as a prop

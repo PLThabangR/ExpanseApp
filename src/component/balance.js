@@ -4,7 +4,7 @@ import {GlobalContext} from '../Context/GlobalState';
 
 
  const balance = () => {
-    // eslint-disable-next-line no-unused-vars
+  
     const { transactions} = useContext(GlobalContext); 
     //Getting the amounts
     const amounts = transactions.map(transaction=> transaction.amount);
@@ -12,8 +12,8 @@ import {GlobalContext} from '../Context/GlobalState';
     return (
     
         <div>
-            <h2>YOUR BALANCE</h2>
-            <h3>R{total}</h3>
+            <h5>Available balance</h5>
+            <h5>R{total}</h5>
         </div>
       
     )

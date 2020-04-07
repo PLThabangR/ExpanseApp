@@ -20,11 +20,11 @@ import {GlobalContext} from '../Context/GlobalState';
         
         <div className="row">
         <div className="col-md-6">
-        <h4>Income</h4>
+        <h5>Income</h5>
         <p style={{color:'#34eb7d'}}>R{income}</p>
         </div>
         <div className="col-md-6">
-        <h4>Expanse</h4>
+        <h5>Expanse</h5>
         <p style={{color:'#eb5334'}}>R{expanse}</p>
         </div>
         <hr></hr>
