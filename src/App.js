@@ -17,7 +17,7 @@ function App() {
           <div className="body">
         <div className="container">
         <MDBCol className ="center" style={{ maxWidth: "40rem" }}>
-          <MDBCard>
+          <MDBCard style={{backgroundColor:'#f5f5f5'}}>
             <MDBCardBody>
             <Balance/>
             <hr></hr>
