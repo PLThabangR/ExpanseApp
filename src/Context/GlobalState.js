@@ -6,9 +6,9 @@ import transaction from '../component/transaction';
 const initialState ={
     transactions:[
         {id:1 ,text: 'Flower', amount: -20},
-        {id:2 ,text: 'Salary', amount: 150},
-        {id:3 ,text: 'Book',   amount: -10},
-        {id:4 ,text: 'Phone', amount: 400}
+        {id:2 ,text: 'Salary', amount: 400},
+        {id:3 ,text: 'Phone',   amount: -200},
+        {id:4 ,text: 'Income', amount: 100}
 
     ]
 }
